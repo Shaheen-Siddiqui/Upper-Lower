@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Upper-Lower/static/css/main.bda9c528.css",
+    "main.js": "/Upper-Lower/static/js/main.3bec3d1b.js",
+    "index.html": "/Upper-Lower/index.html",
+    "main.bda9c528.css.map": "/Upper-Lower/static/css/main.bda9c528.css.map",
+    "main.3bec3d1b.js.map": "/Upper-Lower/static/js/main.3bec3d1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bda9c528.css",
+    "static/js/main.3bec3d1b.js"
+  ]
+}
