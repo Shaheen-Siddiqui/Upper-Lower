@@ -1,23 +1,27 @@
 import React, { useState } from 'react'
-const Textform = ({mode,middle}) => {
+const Textform = ({mode,middle,alertAlert}) => {
     let [text,setText]=useState('');
 
     const texteriaval=(event)=>{
         setText(event.target.value)
     }
     const updateText=()=>{
-       const manuplateToUpperCase= text.toUpperCase()
+       const manuplateToUpperCase=text.toUpperCase()
         setText(manuplateToUpperCase)
+        alertAlert('updating to UppErcAse','success')
+    
     }
     const lowdatedata=()=>{
         const namuplateToLowerCase=text.toLocaleLowerCase()
         setText(namuplateToLowerCase)
+        alertAlert('updating to LOWERCASE','success')
+
     }
     const alearall=()=>{
+        alert('be carefull data will not get you again')
+        alertAlert("ALL TEXT CLEANED",'success')
         setText("")   
     }
-    
-
 return (
 <div>
 <h4>{middle}</h4>
@@ -33,12 +37,10 @@ return (
 <button className='btn btn-dark my-2' onClick={alearall}>clear all</button>
 </section>
 </div>
-
-        </div>
+</div>
     )
 }
 export default Textform
-
 Textform.defaultProps={
 middle:"Change Taxt-to:-"
 }
