@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Navbaar from './components/Navbaar'
 import Textform from './components/Textform'
 import Alert from './components/Alert'
-import { type } from '@testing-library/user-event/dist/type'
 
 const App = () => {
   let [mode,setMode]=useState('dark');
@@ -33,7 +32,9 @@ const App = () => {
 
   return (
     <>
+
 <Navbaar
+alertAlert={alertAlert}
 mode={mode}
 enableDarkMOde={enableDarkMOde}/>
 <Alert 
@@ -45,30 +46,11 @@ alert={alert}
 mode={mode}
 alertAlert={alertAlert}
 />
-
 </div>
 </>
   )
 }
-
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

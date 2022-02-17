@@ -27,7 +27,7 @@ return (
 <h4>{middle}</h4>
 <div className="mb-3">
 <textarea className="form-control" placeholder='Enter Text for ManUpLaTiOn' value={text} id="Empaty Box" rows="7" cols="90" onChange={texteriaval}></textarea>
-    <p className='my-3 abs'>words are:- <span style={{color:"blue"}}> {text.split(" ").length}</span> letters are:- <span style={{color:"blue"}}>{text.length} </span> </p>
+    <p className='my-3 abs'>words are:- <span style={{color:"blue"}}> {text.split(/\s+/).filter((elem)=>{return elem.length!==0}).length}</span> letters are:- <span style={{color:"blue"}}>{text.length} </span> </p>
     <p className='abs'>Reading time:- <span style={{color:"blue"}}>{0.008*text.split(" ").length}</span> </p>
     <h3>Previwe</h3>
     <p> {text} </p>
